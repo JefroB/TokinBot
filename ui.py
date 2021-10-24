@@ -49,7 +49,7 @@ def strategy_questionaire(symbol):
 
 
 def select_coins(symbols, runcount):
-	if runcount == 1:
+	if runcount <= 1:
 		filename = './strategies/coins.json'
 		coins = []
 		

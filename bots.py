@@ -24,17 +24,17 @@ try:
 		# this should be replaced with a call to robinhood to get avilable cryptos. 
 		# Perhaps only occasionally called, since new cryptos are not added often.
 		coins = ['DOGE', 'BCH', 'ETC', 'LTC', 'ETH', 'BSV', 'BTC']
-		print('runcount = ' + str(runcount))
+		
 		select_coins(coins, runcount)
 		coins = read_coins_file()
-		for e in coins['coins']:
-			strategy_questionaire(e)
+		if runcount <= 1:
+			for e in coins['coins']:
+				strategy_questionaire(e)
 
 		startup()
 		try_to_buy_coins()
 
-		#minutes = [15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]
-		minutes = [1]
+		minutes = [15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]
 		for x in minutes:
 			ascii()
 			time = str(x)
