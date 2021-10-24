@@ -12,7 +12,7 @@ From a terminal window enter:
 
 You will be asked for your Robinhood username and password. This is so that the script can log into your Robinhood account to make purchases and sales.
 
-You will also be ashed for a 2FA key. You can find the 2FA key on the robinhood website in the Account section.
+You will also be asked for a 2FA key. You can find the 2FA key on the robinhood website in the Account section.
 
 
 
