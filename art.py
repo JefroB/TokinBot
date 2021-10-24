@@ -1,0 +1,175 @@
+#########################################################################################################
+##                                                                                                     ##
+##                                           TOKIN' BOT                                                ##
+##                                                                                                     ##
+##                                     Written By: J.Bornhoeft                                         ##
+##                                                                                                     ##
+##                       A Bot to Buy and sell cryptocurrencies on Robinhood                           ##
+##                                                                                                     ##
+#########################################################################################################
+from globals import globals as g
+import random
+
+def ascii():
+	colors = ['red', 'green', 'blue', 'cyan', 'yellow', 'magenta', 'white']
+	chosen_color = random.choice(colors)
+ 
+	print(g.colored('                                                                                                                                                                             ',chosen_color))
+	print(g.colored('                                                                                                    \'\'\'\'\'\'                                                                   ',chosen_color))
+	print(g.colored('   TTTTTTTTTTTTTTTTTTTTTTT     OOOOOOOOO     KKKKKKKKK    KKKKKKKIIIIIIIIIINNNNNNNN        NNNNNNNN \'::::\'     BBBBBBBBBBBBBBBBB        OOOOOOOOO     TTTTTTTTTTTTTTTTTTTTTTT',chosen_color))
+	print(g.colored('   T:::::::::::::::::::::T   OO:::::::::OO   K:::::::K    K:::::KI::::::::IN:::::::N       N::::::N \'::::\'     B::::::::::::::::B     OO:::::::::OO   T:::::::::::::::::::::T',chosen_color))
+	print(g.colored('   T:::::::::::::::::::::T OO:::::::::::::OO K:::::::K    K:::::KI::::::::IN::::::::N      N::::::N \':::\'\'     B::::::BBBBBB:::::B  OO:::::::::::::OO T:::::::::::::::::::::T',chosen_color))
+	print(g.colored('   T:::::TT:::::::TT:::::TO:::::::OOO:::::::OK:::::::K   K::::::KII::::::IIN:::::::::N     N::::::N\':::\'       BB:::::B     B:::::BO:::::::OOO:::::::OT:::::TT:::::::TT:::::T',chosen_color))
+	print(g.colored('   TTTTTT  T:::::T  TTTTTTO::::::O   O::::::OKK::::::K  K:::::KKK  I::::I  N::::::::::N    N::::::N\'\'\'\'          B::::B     B:::::BO::::::O   O::::::OTTTTTT  T:::::T  TTTTTT',chosen_color))
+	print(g.colored('           T:::::T        O:::::O     O:::::O  K:::::K K:::::K     I::::I  N:::::::::::N   N::::::N              B::::B     B:::::BO:::::O     O:::::O        T:::::T        ',chosen_color))
+	print(g.colored('           T:::::T        O:::::O     O:::::O  K::::::K:::::K      I::::I  N:::::::N::::N  N::::::N              B::::BBBBBB:::::B O:::::O     O:::::O        T:::::T        ',chosen_color))
+	print(g.colored('           T:::::T        O:::::O     O:::::O  K:::::::::::K       I::::I  N::::::N N::::N N::::::N              B:::::::::::::BB  O:::::O     O:::::O        T:::::T        ',chosen_color))
+	print(g.colored('           T:::::T        O:::::O     O:::::O  K:::::::::::K       I::::I  N::::::N  N::::N:::::::N              B::::BBBBBB:::::B O:::::O     O:::::O        T:::::T        ',chosen_color))
+	print(g.colored('           T:::::T        O:::::O     O:::::O  K::::::K:::::K      I::::I  N::::::N   N:::::::::::N              B::::B     B:::::BO:::::O     O:::::O        T:::::T        ',chosen_color))
+	print(g.colored('           T:::::T        O:::::O     O:::::O  K:::::K K:::::K     I::::I  N::::::N    N::::::::::N              B::::B     B:::::BO:::::O     O:::::O        T:::::T        ',chosen_color))
+	print(g.colored('           T:::::T        O::::::O   O::::::OKK::::::K  K:::::KKK  I::::I  N::::::N     N:::::::::N              B::::B     B:::::BO::::::O   O::::::O        T:::::T        ',chosen_color))
+	print(g.colored('         TT:::::::TT      O:::::::OOO:::::::OK:::::::K   K::::::KII::::::IIN::::::N      N::::::::N            BB:::::BBBBBB::::::BO:::::::OOO:::::::O      TT:::::::TT      ',chosen_color))
+	print(g.colored('         T:::::::::T       OO:::::::::::::OO K:::::::K    K:::::KI::::::::IN::::::N       N:::::::N            B:::::::::::::::::B  OO:::::::::::::OO       T:::::::::T      ',chosen_color))
+	print(g.colored('         T:::::::::T         OO:::::::::OO   K:::::::K    K:::::KI::::::::IN::::::N        N::::::N            B::::::::::::::::B     OO:::::::::OO         T:::::::::T      ',chosen_color))
+	print(g.colored('         TTTTTTTTTTT           OOOOOOOOO     KKKKKKKKK    KKKKKKKIIIIIIIIIINNNNNNNN         NNNNNNN            BBBBBBBBBBBBBBBBB        OOOOOOOOO           TTTTTTTTTTT      ',chosen_color))
+	print(g.colored('                                                                                                                                                                             ',chosen_color))
+
+
+def header_art(symbol):
+	## SYMBOL HEADER ##
+	print(g.colored('*************************************************************', 'yellow'))
+	print(g.colored('*************************************************************', 'yellow'))
+	print(g.colored('**                                                         **', 'yellow'))
+	if symbol == 'DOGE':
+		print(g.colored('**                        ' + symbol + '                             **', 'yellow'))
+	else:
+		print(g.colored('**                        ' + symbol + '                              **', 'yellow'))
+	print(g.colored('**                                                         **', 'yellow'))
+	print(g.colored('*************************************************************', 'yellow'))
+	print(g.colored('*************************************************************', 'yellow'))
+	print('')
+	## SYMBOL HEADER ##
+
+
+def high_rent():
+	colors = ['red', 'green', 'blue', 'cyan', 'yellow', 'magenta']
+	chosen_color = random.choice(colors)
+ 
+	print(g.colored('                                                                          THE RENT IS TOO DAMN HIGH!!!                                                                              ','white'))
+	print(g.colored('NmmmmmmmmmmmmmmmmmmmNmmmmmmmmNNNNNmmmmmNNNNNNNyhNNMNmmmmmdddddddddddddddddddddmmmmddmdmmdmdmmmmmmmmmmmmmmmmddddddddNNMNNmmmddddddddddddmmddddddmmmdmmmmmmmmmmddddddddddmmmmmmmmmmmmm',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmmmmmmNNmmmmmmmNNNNNNNNMNNMMMMMddNNNMmmmmdddddddddddddddddddddddmmmmddddddddmmmmmmmmmmmmmmmddddddddddmNMNmmmmddddddddddddmmddddddddmdddmmmmmmmmmdddddddddmmmmmmddmmmmm',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmmmmmmmmmmmmmmmNNNNNMMMMMMMMMMMmNMMMNmmmmdddddddddddddddddddddddmmmddddddddddmmmmmmmmmmmmmmmddddddddmNNMNmmmmdddddddddddddmdddddddddddddmmmmmmdddddddddddmmmmmmdddmddd',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmmmmmmmmmmmmmmmNNNMMMMMMMMMMMMMMMMMMNmmmddddddddddddddddddddddddmmmdddddddddmmmmmmmmmmmmmmmdddddddddmNNMNmmmmddddddddddddddddddddddddddddmmmmddddddddddddmmmmmmmmddddd',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmmmmmmmmmmmmmNNMMMMMMMMMMMMMMMMMMMMMmmddddddddddddddddddddddddddmmmddddddddddmmmmmmmmmmmmmmdddddddddmNNMNmmmmdddddddddddddddddddddddddddmddddddddddddddddmmmmmmmmmdddd',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmmmmmmmmmmmmmMMMMMMMMMMMMMMMMMMMMMMMmmddddddddddddddddddddddddddmmmddddddddddmmmmmmmmmmmmmmmdddddddddmNMNmmmmddddddddddddddddddddddddddddddddddddddddddddmmmmmmmmddddd',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmmmmmmmmmmmmmNMMMMMMMMMMMMMMMMMMMMMMmmddddddddddddddddddddddddddmmmddddddddddddmmmmmmmmmmmmmddddddddmNNMNmmmdddddddddddddddddddddddddddddddddddddddddddddmmmmmmddddddd',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmmmmmmmmmmmmmmMMMMMMMMMMMMMMMMMMMMMNmmddddddddddddddddddddddddddmmmdddddddddddmmmmmmmmmmmmmdddhyysooooydmdmmmddddddddddddddddddddddddddddddddddddddddddddmmmmmdddddddd',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmmmmmmmmmmmmmmMMMMMMMMMMMMMMMMMMMMMmmmmdddddddddddddddddddddddddmmmdddddddddddmmmmmmmmmmmmddys+/-.....--:/oydddddddddddddddddddddddddddddddddddddddddddddmmmmmmddddddd',chosen_color))
+	print(g.colored('NmmmmmmmmmmmmmmmmmmmmmmmmmmmMMMMMMMMMMMMMMMMMMMMNmmmddddddddddddddddddddddddddmmmdddddddddddmmmmmmmmmmdhso+/:-..````..-://osyddddddddddddddddddddddddddddddddddddddddddmmmmmdddddddd',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmmmmmmmmmmds+yMMMMMMMMMMMMMMMMMMMNmmmmddddddddddddddddddddddddddmmmdddddddddddmmmmmmmmdhso+//::--:-.``..-/+oo++oyddddddddddddddddddddddddddddddddddddddddmmmmmdddddddd',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmmmmmmmmmd/ `+NMMMMMMMMMMMMMMMMMMmmmmdddddddddddddddddddddddddddmmdddddddddddddmmmmmdhyso+////////::::///ossssssssdmdddddddddddddddddddddddddddddddddddddmmmmmdddddddd',chosen_color))
+	print(g.colored('Nmmmmmmmmmmmmmmmmmmmmmms    .odNMMMMMMMMMMMMMMNmmmddddddddddddddddddddddddddddmmdddddddddddddmmmmdyyso+++/://///::/+++osssssyyyysymddddddddddddddddddddddddddddddddddddmmmmddddddddd',chosen_color))
+	print(g.colored('NmmmmmmmmmmmmmmmmmNNNNN.       .+sdMMMMMMMMMNNmmmmddddddddddddddddddddddddddddmmdddddddddddddddmdyhsooo++/////////+osoooooosyyyyyosdmddddddddddddddddddddddddddddddddddmmmmddddddddd',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmNMMNmdy/            `-:+oooymNNmmmmmdddddddddddddddddddddddddddmmdddddddddddddmddyyso+++++o/+o+++++ossssooosyyyyyysyhmmdddddddddddddddddddddddddddddddddmmmmddddddddd',chosen_color))
+	print(g.colored('NmmmmmmmmmmmmmNMmNMNmd+/:-..`     ```..::odmmmmmmdddddddddddddddddddddddddddddmmdddddddddddddddhhyyo+shhhhssoysssoosyyyyyyyyyyhhhhyhmNmddddddddddddddddddddddddddddddddmmmmddddddddd',chosen_color))
+	print(g.colored('NmmmmmmmmmmmmmmMMMMMMMMNNNNNNmmhhhddmNNNMNmmmmmmmdddddddddddddddddddddddddddddmmdddddddddddddmNmdddhyyhyyhooshmddyhyysyyyhhhhhddhyyymNNddddhhddddddddddddddddddddddddddmmmmddddddddd',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmNMMMMMMMMMMMNMMMMMMMMMMMMMNmmNmmmmdddddddddddddddddddddddddddddmmdddddddddddddNNNNmmdmmmhmNdddmmhossssyyyhddmdddhyyyydmMmdddddddddddddddddddddddddddddddmmmdddddddddd',chosen_color))
+	print(g.colored('NmmmmmmmmmmmmmmmMMMMMMMMMMMMMMMMMMMMMMMMMmmmNmmmmddddddddddddddddddddddddhhdddmddddddddddddddddhysyyyysshsyNhdddhydhhddmddddmdyysssyhmNmdddddddddddddddddddddddddddddddmmmdddddddddd',chosen_color))
+	print(g.colored('NmmmmmmmmmmmmmmmMMMMMMMMMMMMMMMMMMMMMMMMMmmmmmmmmdddddddddddddddddddhdddhhhdddmddddddddddddhsyhssysooo/:::ohoossyyhmmmMMNNmmmdhysssyydNNdddddddddddddddddddddddddddddddmmmdddddddddd',chosen_color))
+	print(g.colored('NmmmmmmmmmmmmmmmNMMMMMMMMMMMMMMMMMMMMMMMNmmmmmmdddddddddddddddddddddddhhhhhddmmdddddddddddh/+ys+:/++sdhooshhosooosssydNMMMMMMNmmhyshhmNmddhhddddddddddddddddddddddhddddmmmdddddddddd',chosen_color))
+	print(g.colored('mmmmmmmmmmmmmmmmMMMMMMMMMMMMMMMMMMMMMMMMmmmmNmmddddddddddhhddddddddddhhhhhhdddmddddddddddy//hysooossyoyhhmmdsds++osyydmmmmNmmddmmyyhddmddddhhddddddddddddddddddddddhhddmmmdddddddddd',chosen_color))
+	print(g.colored('NmmmmmmmmmmmmmmmMMMMMMMMMMMMMMMMMMMMMMMNmmmmNmmdddddddddddhdddddddhdhhhhhdhdddmdddddddddy:-odhyyyyo++////+osyhs/::/+syhddmmmmyshdhhhmdddhhhhdddddddddddddddddddddddddddmmmdddddddddd',chosen_color))
+	print(g.colored('NmmmmmddmmmdmmdNMMMMMMMMMMMMMMMMMMMMMMMNmmmmmmmddddddddddddddddddddddhhhhhhdddmddddddddho-.shhhys//+oo////++osys+ooosyyhdNNmhssydmNNNmdddhdhhdddddddddddddddddddddhddddmmmdddddddddd',chosen_color))
+	print(g.colored('NmmmmmmddmmddmmNMMMMMMMMMMMMMMMMMMMMMMMmmmmmmmmdddddddddddhhhhddddhhhhhhhhddddmdddddddddo-.:+++/:smmmmyssso//+oyyyyyyyhdmNmh++sdmdmdmddddhhhhhddddddddddddddddddddhdddddmddddddddddd',chosen_color))
+	print(g.colored('NmmmdddddmmmdmNMMMMMMMMMMMMMMMMMMMMMMMmdddmmmmddddddddddhhhhhhhddhhhhhhhhhhhddddddddddddy+:///+shdmhdysyddmdy+:syhhhhhdmNmh+/+oyhdhhsdddhhhhhdddddddddddddddddddddhhddddmddddddddddd',chosen_color))
+	print(g.colored('NmmmdddddmdddmMMMMMMMMMMMMMMMMMMMMMMMmddddmmmmddddddddhhdhhhhhhhhhdhhhhhhhhhddddddddddddddyyhyyhdhs+:-..-/+shd//+oyyhhddds+//+yyddyoyhhhhhhhhhddddddddddddddddddddhhdddmmddddddddddd',chosen_color))
+	print(g.colored('NmmmddddddddmNMMMMMMMMMMMMMMMMMMMMMMMdddddmmmmdddddddddhhhhhhhhhhhhhhhhhhhhhdddddddddddddhosyooyhdhso+///+ooshhs+++o+o+++++//shmms/ohhhhhdhhhddddddddddddddddddddhhhhddmmddddddddddd',chosen_color))
+	print(g.colored('NmmmdddddddmNMMMMMMMMMMMMMMMMMMMMMMMMmdddddmmmddddddddhhhhhhhhhhhhhhhhhhhhhhddddddddddddho:-:--:syyo+++oshhhhhhhyyysooo+/+++odmdyo/+yhddhhhhhddddddddddddddddddddhhhhddmmddddddddddd',chosen_color))
+	print(g.colored('NmmmdddddddmNMMMMMMMMMMMMMMMMMMMMMMMMNddddmmmmddddddhhhhhhhhhhhhhhhhhhhhhhhhddddddhddhhhs:-...--:/++o/:+ossso+++shdyymmdddddmMmhy//+shdhhhhhhhdddddddddddddddddddhhhhdmmmddddddddddd',chosen_color))
+	print(g.colored('NmmmdddddddmNMMMMMMMMMMMMMMMMMMMMMMMMmdddddmmmdddddhhhhhhhhhhhhhhhhhhhhhhhhhdddhhhhhhhhy/-......--::///:///-----/syhmNmmmmNNNMMds++/ohhhhhhhhhdddddddddddddddddddhhhdddmmddddddddddd',chosen_color))
+	print(g.colored('NmmmdddddddmMMMMMMMMMMMMMMMMMMMMMMMMmddddddmmmdddddhhhhhhhdmmmmdmmdhhhhhhhhhdddhhhhhhhhy/-.......-:o+/-:---...--:+dNmdddmNhyMMNhyys++shhhhhhhhhhhhhddddddddddddddhhhdddddddddddddddd',chosen_color))
+	print(g.colored('NmmmdddddddNMMMMMMMMMMMMMMMMMMMMMMMMNdddddmmmmdddddhhhhhhdNNmNNmmNNmmmmdddmmddddddddddhho/-------:/yy/----.....-:sdddmmds-:NMMNmhys+://syhhhhhhhhhhhddddddddhdddhhhhhddddddddddddddd',chosen_color))
+	print(g.colored('NmmddddddddNMMMMMMMMMMMMMMMMMMMMMMMMNddddddmmmddddhhhhhhdNNmmNNmmmNNmNmmmmNNmmdmmNmmmmmmmdyo+:--://yy/-----..---/hds/-```sNMMMMNmyso///:/+yhhhhhhhhhhddddddhhhddhhhhhddddddddddddddd',chosen_color))
+	print(g.colored('NmmmdddddddMMMMMMMMMMMMMMMMMMMMMMMMMNddddddmmdddddhddddmMMMNmNNNmmNNNmNNmmmNmmmmmNNNmmmmNNMNN/.-:+syhy+::----.-:/-`    -dNMMMMMNNdhoso+/+o/ohhhhhhhhhhhhhhhhhhdhhhhhdddddddddddddddd',chosen_color))
+	print(g.colored('NmmmddddddmMMMMMMMMMMMMMMMMMMMMMMMMMMNmmmmmmmmmmmmmNNNmmmNNNNNNNNmNNNmmNNmmmNmmmmmmmmmmmNNMMMs```..`:ysosss/--.`      +NNMMMMMMMNNNNNmmhyhs+yhhhhhhhhhhhdhhhhhhhhhhhhddddddddddddddd',chosen_color))
+	print(g.colored('NmmmddddddNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNNNNNmmNNNNNNmmmmmmNNmmmmmmmmNNNNNNNs    .ohsyddNNy.``     `yNNMMNMMMMMNNNNNNNNmmddddhhhhhhhhhhhhhhhhhhhhhhhddddddddddddddd',chosen_color))
+	print(g.colored('NmmmdddddNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNMNNNNMNmmNNNmNNmmmmmmmNmmmmmNNNNNNNNNN-   -dys/+hNMMy       .hNNNMNNNNNNNNNNNNNNNmmmmmmmmddhhhhhhhhhhhhhhhhhhhddddddddddddddd',chosen_color))
+	print(g.colored('NmmmdddddNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNMMNNNNNNNNNNNNNNNNNmmmNNmmmmNNNNNNNNNd.  -hdhhyhMMMNN+`    :dNNNNNNNMNNNNNNNNNNNNmmmmmmmmmmmmdddhhhhhhhhhhhhhdddddddddddddddd',chosen_color))
+	print(g.colored('NmmmdddddNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMNNNMMMNNNNMMMNMNNNNNNNNNNNNNNNNmNNmmmNNNNNNNNNNy` -dNNNdydMMNmdy-   /mNMNNNNNNNNNNNNNNNNNNmmmmmmmmmmmmmmmmmmddhhhhhhhhhdddddddddddddddd',chosen_color))
+	print(g.colored('NmmmddddmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN+`/dddmdhshh/-.`    +mNNNMNNNNNNNNNNNNNNNNmmmNNNmmmmmmmmmmmmmmmmmddhhhhhddddddhhhhdddddd',chosen_color))
+	print(g.colored('NmmmdddddNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/oNNmNNmyoy+      `oNNNMMNNNNNNNNNNNNNNNNNmNNmmmmmmmmmmmmmmmmNNNNNNmhhhhdddddhdhhdhhdddd',chosen_color))
+	print(g.colored('NNmmdddddMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNmNNNNNNNNNNNNNNNNNNNoNNNNNmNmyh:     `yNNNNNMNNNNNNNNNNNNNNNNNNNNmmmmmmmmmmmmmNNNNNNNMMMNhhhddddhhhhhhdddddd',chosen_color))
+	print(g.colored('NNmmdddddMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNomdNMmmNMhd+    .hNNNNNNNNNNNNNNNNNNNNNNNNNNmmmmmmmmmmmmNNNNNNNMMMMMMdhhddddhhhhhhddhhdd',chosen_color))
+	print(g.colored('NmmmdddddNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNMMNNNNNNNNNNNNNNNNNNNNMNNNNNNNNNNNNhNMhdNms+/   -hNNNNNNNNNNNNNNNNNNNNNNNNNNNNmmmmmmmmmNNNNNNNNNMMMMMMmhhddddhhhhhdhhdddd',chosen_color))
+	print(g.colored('NNmmdddddmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNMMMMNNNNNNNNNNNNNNNNNNNNMNNNNNNNNNoydmdymho-+:  -mNNNNNNNNNNNNNNNNNNNNNNNNNNNmmmmmmmmmNNNNNNNNNNNNNNNMMmyhdddhhhhhhhhhdddd',chosen_color))
+	print(g.colored('NNmmmdddddddmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNMMMMNNNNNNNNNNNNNNNNMNNNMNNNNNNNNsddmmmmh.  . /mNNNNNNNNNNNNMNNNNNNNNNNNNNNNmmmmmmNNNNNNNNNNNNNNNMMMMMmyhdddhhhhhhhhhhddd',chosen_color))
+	print(g.colored('NNmmmddddddddddmmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMNNNNNNNNNNNNNNNNMNNNMNNNNNNNmNmNMNNmy+``oNNNNNNNNNNNNMMNNNNNNNNNNNNNNNNNmmmNNNNMMMNNNNNNNMMMNNNMNhyhdddhhhhhhhhhhddd',chosen_color))
+	print(g.colored('NNmmmdddddddddddddddmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMNNNNNNNNNNNNNNNNNMMMMMNNNNNNMNNNNNNNmhhhNNNNNNNNNNNMMNNNNNMMMNNNNNNNNNNNNNNNNNMMMNNNNNMMMMMMMMMNNhyhdddhhhhhhhhhhhdd',chosen_color))
+	print(g.colored('NNmmmdddddddddddddddhhddmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNMNNMNNNNNNNmddmdy++hNNNNNNNNNNNNNNNNNNNMMMNNNNNNNNNmNNNNNNNMMMNNNMMMMMMMNNNNNNNdhhdddhhhhhhhhhhhdd',chosen_color))
+	print(g.colored('NNmmmddddddddddddddddhhddmmmmmmNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNNNMNNMNNNNNNMNNm:``-mNNNNNNNNMNNNNNNNNhhmNNNNNMMMMNMNNNNNNNMMMMNNNNNNNNNNNNNNNMMhyhddhhhhhhhhhhhhdd',chosen_color))
+	print(g.colored('NNNmmddddddddddddddddddddmmmdddddddmmNNMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNNNMNMNNNNNMMNNhssmNNNNNNMMNNNNNNNNNNNNNNNNNNNNMNNMNNNNNNNMMMNNNNNNNNNNNNNNNMMMNyhddhhhhhhhhhhhhdd',chosen_color))
+	print(g.colored('NNNmmddddddddddddddddhdddmmmdddddhhhdddddmNNNNMMMMMMMMMMMMMMMMMMMNMNNNNNNNNNNNNNNNNNNNMMMNNNNMMNNNNNNNNNNMMMNNNNNNNNNNNNNNNNNNNMMNMMMMMMNNNMMMMNNNNNNNNNNNNNNNMMMNyhddhhhhhhhhhhhhhd',chosen_color))
+	print(g.colored('NNNmmddddddddddddddddhdddmmmmdddddddddddddmmddddmmNMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNNNNMMMNNNMMNNNNNNNNMMMNNNNNNNNNNNNNNNNNNNNNMNNMMMMMNNNNMMMMMMMMMMNNNNNNNNMMMMNdddhhhhhhhhhhhhhhh',chosen_color))
+
+
+def relax():
+	colors = ['red', 'green', 'blue', 'cyan', 'yellow', 'magenta']
+	chosen_color = random.choice(colors)
+	print('')
+	print(g.colored('                               +7777777777777777777777777777777777777777=      /77777=                                                   ?===',chosen_color, attrs=['bold'] ))
+	print(g.colored('                               I777777777777777777777777777777777777777=      I777777~                                               :,~~=,:~',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                ?777777777777777777777777777777777777~         +7777+==?=                                    ?+~~,.:,,~::~+?+=',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                I7777777777777777777777777777777777~          /=7777777777?                             I,,=+=+++++++++==,,=??I',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                 +7777777777777777777777777777777~          ?7777777777777+                           :=+=++++++++++++++++++~,?',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                  7777777777777777777777777777777??          +777 777777777~                       I,++++++++++++++++++++++++++.',chosen_color, attrs=['bold'] ))
+	print(g.colored('                       +???==     ?77777777777777777777777777777777=          =??+777777777?                      :+++++++++++++++++++++++++++++~=',chosen_color, attrs=['bold'] ))
+	print(g.colored('                       I77777:     ?77777777777777777777777777777777=             =777777777,                   ~=+++++++++++++++++++++++++++++++=:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                       =77777:I     =777777777777777777777777777777=              :7777777=?                    :=++++++++++++++++++++++++++++++++++,',chosen_color, attrs=['bold'] ))
+	print(g.colored('                       =7777777I     ~77777777777777777777777777I?                 I7I777                     ,+++++++++++++++++++++++++++++++++++++=',chosen_color, attrs=['bold'] ))
+	print(g.colored('                       +77777777I     ~~I777777777777777777777II7                                            :++++++++++++++++++++++++++++++++++++++:I',chosen_color, attrs=['bold'] ))
+	print(g.colored('                        =I7777?             II7777777 777777777=                                            +=+++++++++++++++++++++++++++++++++++++++,',chosen_color, attrs=['bold'] ))
+	print(g.colored('                            II                ?7777+=7 777777777=                                           ,++++++++++++++++++++++++++++++++++++++++,',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                               ?777?77777777777777?      =7?=,?   ~             =+.:=+??+=~,,=+++++++++++++++++++++++++++++++++++++++,',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                                 =7777?7777777777777?    +777777777I          ?????+=++?+?????+::~++++=++++++++++++++++++++++++++++++.',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                                       =7777777777777+   I777777777+         +??.............,=????=,,=++++++++++++++++++++++++++++++,',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                                       I777777777777777~ I777777777=        ?==...................,~+??+=,,~=++++++++++++++++++++++++,',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                                        ?777777777777777777777777777~       ~?...........................,~???=,~=++++++++++++++++++~?',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                     ?                  /777777777777777777777777777+       ?=................................~???=,:++=++++++++++++,',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                  .+7777777~           +77777777777777777777777777I        +?:...,...:...........................,+???+,~+++++++++++:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                  ?777777777~         I777777777777777777777777777:        =?~.......~I7I:,..........................+???+,=+++++++=',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                 I7777777777I??=       +777777777777/I77777777777777I+     =?+.......=IIIII~.,.........................????~~++++++:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                  ?I77777777+777+       ~=?:77777777? =777777777777777+     ?+.,.....:IIIII+...?II?:,...................????==++++=I',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                     +77777~777=           :77777777=  ~I7777777777777=     ,+??,.....IIII7IIII7IIII:II~,:..............:????.++++=/',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                         I7=77=            +77777777~   ,7777777777777=      ==????~..,IIIIIIIIIIII?=IIIII7.,............????~+++:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                            I              +77777777+   ,777777777777:        =:???????:.=IIIIIIIIII~7IIIII,.............????+=++?',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                                            + 777777?     :7777777?             :??????????+::=?7III:7IIIII7+~,IIII=.....????+=+,',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                                             `?I?++~      ?777777=               +~?????????????+~,+I:7IIIIIIIIIIIIIIII~=????~+~',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                                                        =?777777777+             ~++=::+????????????+=,~?7IIIIIIIIIIII++?????.==',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                                                       ?77777777777+            :++++++++~,+?????????????+=,~?7IIII7I,+?????+=:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                                                        ~77777777777==         ?++++++++++++=~,=???????????????+:,.,+??????+:~',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                                                         I=7??777777777+I      ?=++++++++++++++++~.:+?????????????????????+=+=',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                                                          `7777777+??7777I=      :+~:.,~=+++++++++++=+~,,~+??????????????,++,',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                          ,+??~=                              +7+777777=7+77~I     :~,III,?~.,=++++++++++++=,,,~++++++~.+++:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                       +::=????,==                                       I+7?7I+     +III~IIIIII,.:=+=+++++++++++++++++++++I',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                     =:?,+.?????,~.                                         =?I=7I   ~.+?IIIIIIIIII7I~.~++++++++++++++++++:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                 I=:.:,:~,:,+?:,,:.:?                                          =I+II=III:?=~I7I+I7IIIII??:,=+++++++++++++:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                            :,,,.~.~..~:::..:,~:???,:7                                            ?==7+7~IIII7?,:?IIIII:IIII=.++++++++++:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                        =,:,:::,:::.:..~~,~,~,+??????,7                                           ?~?I7=I7IIIII=IIII+~=?7IIII?.++++++++=?',chosen_color, attrs=['bold'] ))
+	print(g.colored('                       ?.,.~.::~::.::,,:~,:,+?,+???????                                         +==?III,=I?III~IIIIIII?7I=,+?I:++++++++:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                       ?,:,.~,~:~,~..:,:????,???++????=                                         :+,III7+II7+~?~7IIIIII,IIII7I7.:+++++=:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                        ..:.~::,:..~=?.+????,????,???.                                          =+++,:?IIIIIII77?::?77=IIIIIII=++++++==',chosen_color, attrs=['bold'] ))
+	print(g.colored('                         :,::?I77777,~.:=,,~??????++,                                          ?++++++++:~?II=IIIIII7+7I=:+II:+++++++:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                    +++==::,..:..,~:I                                          ~:+++++++++++=:,~III77+IIII=.++++++++:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                    :~.~??????????,                                        ~=????+,++++++++++++++++++++++++++++++++=+',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                    ~====~.,,,.,:                                      .=??????????+~=+++++++++++++++++++++++++++++,',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                   :==========:                                    =~?????????????????+,:+++++++++++++++++++++++++~?',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                  ?.~=~======~?                                +,?????????????????????????:.=+++++++++++++++++++++=',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                  .===:,,,::,,                              ..????????????????????????????????:,:+++=++++++++++++,~',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                  ,~=========:                            ~,++=,~???????????????????????????????????=~,..,..,,,:,.~~',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                  :~=========,                        :.:..~++++++:=?????????????????????????????????????????????????=',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                  ~==========,                      ?====~.+++++++++=,=???????????????????????????????????????????????=',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                  :~=========,+                    +=++====++++++++++++=,~?????????????????????????????????????????????+:',chosen_color, attrs=['bold'] ))
+	print(g.colored('                                  ,=======~,~=:                    =+++++,+++++++++++++++++~:+???????????????????????????????????????????~?',chosen_color, attrs=['bold'] ))
+
+
+
