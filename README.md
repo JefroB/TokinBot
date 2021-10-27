@@ -22,7 +22,12 @@ Account > Settings > Security And Privacy > Authenticator App
 
 Then enable Two-Factor Authentication. Do Not scan the code. Instead, click the link below the code that says "can't scan it". The code presented is your 2FA key.
 
-###### To Do:
+
+
+
+
+
+### To Do:
 Add cancelation logic in case purchase orders take to long to fulfill.
 
 Purchase size logic would benefit from being reworked.
